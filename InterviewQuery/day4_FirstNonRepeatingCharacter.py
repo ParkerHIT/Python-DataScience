@@ -1,4 +1,7 @@
-def first_uniq_char(string):
+#Problem https://www.interviewquery.com/questions/find-the-first-non-repeating-character-in-a-string
+
+#Solution
+def first_NR_char(string):
     letters = ""
     for character in string:
         if character not in letters:
@@ -26,7 +29,7 @@ def first_uniq_char(string):
 if __name__ == '__main__':
     string = input("Enter the string: ")
     print(string)
-    position = first_uniq_char(string)
+    position = first_NR_char(string)
     if position == 100:
         print("Try again")
     else:
