@@ -1,1 +1,30 @@
-Q
+https://www.interviewquery.com/questions/z-and-t-tests
+
+What are the Z and t tests? What are they used for? 
+What is the difference between them? 
+When should use one over the other?
+
+
+Both the Z-test and the t-test are statistical tests used to make inferences about population parameters based on sample data. 
+They are commonly used in hypothesis testing and are appropriate for comparing means of samples to population parameters 
+or comparing means between two samples.
+
+
+A z-test is a statistical test to determine whether two population means are different 
+when the variances are known and the sample size is large. A z-test is a hypothesis test 
+in which the z-statistic follows a normal distribution. 
+A z-statistic, or z-score, is a number representing the result from the z-test.
+
+A t-test is any statistical test that uses the t, or Student’s t, family of distributions 
+to compare two means to see if they are significantly different from each other. 
+Typically, t-tests are conducted when the population’s standard deviation is unknown, or there is a small sample size.
+
+Like all hypothesis tests, the Z and t tests work by calculating the probability of the opposite of the 
+hypothesis we want to test. The Z and t tests are identical in almost every way:
+
+They both assume the samples from the population follow a normal distribution 
+They both have the same null and alternative hypothesis 
+They both use the same test statistic, namely (μ^​−μ0)/(s/n), 
+where s is the sample standard deviation and n is the sample size. 
+The only difference between them is that they use a different probability distribution function (pdf) 
+(and thus, cumulative distribution function) to calculate their p-value.
