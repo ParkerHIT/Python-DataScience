@@ -1,0 +1,13 @@
+https://www.interviewquery.com/questions/why-time-series
+What are time series models? Why do we need them when we have less complicated regression models?
+
+We need time series models because of a fundamental assumption of most standard regression models: No autocorrelation. 
+In layman’s terms, this means that a data point’s values in the present are not influenced by the values of data points in the past. 
+The fundamental example is stock prices: stock prices on one day are clearly influenced by the stock’s price on the previous day. 
+It wouldn’t make sense for a stock that was $100 one day to suddenly be $5 the next day and $1000 the day after in normal market 
+conditions. If this assumption is violated in traditional regression models, the parameters,β, would blow up to astronomical levels 
+and result in an extremely large R SQUARED value. This is because the model will try to fit the parameters assuming that there is 
+no autoregression, resulting in the model wildly overestimating the parameters because it doesn’t take into account the 
+natural inflation of data point values as time goes on.
+
+Thus, in order to do valid inference on data that has autocorrelation, we need models that control for autocorrelation like ARIMA.
