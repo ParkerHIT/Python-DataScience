@@ -1,0 +1,17 @@
+
+https://www.interviewquery.com/questions/assumptions-linear-regression
+What are the assumptions of linear regression?
+
+1) Linear relationship - predictors should be linearly correlated to response. Check with scatter plot. 
+If not, apply appropriate transformation. Also check for outliers as linear regression is sensitive to this.
+
+2) Multivariate normality - residuals are normally distributed - Check with histogram.
+
+3) No multicollinearity - All the variance in your predictors should explain the variance in your response 
+ie predictors should not be correlated to each other. Check with correlation matrix or VIF.
+
+4) No auto-correlation - refers to correlation between values of same variable. 
+This will result in bias in your standard error which will make your P value unreliable ie garbage model.
+Check with Durbin-Watson test (want value close to 2).
+
+5) Homoscedasticity - variance of your errors should be constant across regression line.
